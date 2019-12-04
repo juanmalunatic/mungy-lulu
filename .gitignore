@@ -4,7 +4,7 @@
 /*
 !wp-content/
 
-# track readme.md in the root (i.e. do NOT ignore it)
+# track various files in the root (i.e. do NOT ignore them)
 !README.md
 
 # ignore everything in the "wp-content" directory, except:
