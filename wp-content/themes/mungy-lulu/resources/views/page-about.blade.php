@@ -20,7 +20,10 @@
 
     {{$about_number_kisses}}
 
-    {{$about_testimonial_1}}
+    @debug
   </pre>
+
+  TO-DO implement testimonial w/ global data
+
 @endsection
 
