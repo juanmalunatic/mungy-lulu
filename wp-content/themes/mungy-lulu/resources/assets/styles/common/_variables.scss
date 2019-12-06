@@ -52,15 +52,31 @@ $font-size-small: ceil(($font-size-base * 0.85)) !default;  // ~12px
 $line-height-base:        1.428571429 !default; // 20/14
 
 //== Headings
-$font-size-h1: floor(($font-size-base * 2.6)) !default;  // ~36px
-$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3: ceil(($font-size-base * 1.7)) !default;   // ~24px
-$font-size-h4: ceil(($font-size-base * 1.25)) !default;  // ~18px
-$font-size-h5: $font-size-base !default;
-$font-size-h6: ceil(($font-size-base * 0.85)) !default;  // ~12px
+$font-size-base-headers: $font-size-base * 1.1;
+
+/* stylelint-disable */
+$font-size-h1: $font-size-base-headers * 2.60 !default; // ~36px
+$font-size-h2: $font-size-base-headers * 2.15 !default; // ~30px
+$font-size-h3: $font-size-base-headers * 1.70 !default; // ~24px
+$font-size-h4: $font-size-base-headers * 1.25 !default; // ~18px
+$font-size-h5: $font-size-base-headers * 1.00 !default;
+$font-size-h6: $font-size-base-headers * 0.85 !default; // ~12px
+/* stylelint-enable */
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    "Fredoka One" !default;
 $headings-font-weight:    400 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          inherit !default;
+
+// Colors
+$purple-light: #56445e;
+$purple-dark: #331241;
+
+$brand-primary: $purple-light;
+
+$text-color: $purple-light !default;  //** Global text color on `<body>`.
+$body-color: $text-color;
+$link-color: $brand-primary !default; //** Global textual link color.
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+$headings-color: inherit !default;

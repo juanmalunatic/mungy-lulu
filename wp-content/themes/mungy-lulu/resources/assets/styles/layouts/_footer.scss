@@ -1,0 +1,104 @@
+.footer {
+  --paws-height: 72px;
+  --padding-top: 30px;
+
+  font-weight: 500;
+  background: #f8f8f8;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  position: relative;
+  margin-top: calc(var(--padding-top) + (var(--paws-height) / 2));
+
+  @include media-breakpoint-up(md) {
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
+
+  // All the size and order shufflings
+  &__block {
+    margin-top: 30px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &__phrase {
+      order: 1;
+
+      @include media-breakpoint-up(md) {
+        order: 2;
+      }
+    }
+
+    &__menu {
+      order: 2;
+
+      @include media-breakpoint-up(md) {
+        order: 1;
+      }
+    }
+
+    &__address {
+      order: 3;
+    }
+  }
+
+  &__paws {
+    --paws-width: 200px;
+
+    display: block;
+    width: var(--paws-width);
+    height: var(--paws-height);
+    background: #00f;
+    position: absolute;
+    top: calc(-0.5 * var(--paws-height));
+    left: calc(-0.5 * var(--paws-width));
+    margin-left: 50%;
+  }
+
+  &__menu {
+    --background: #f90;
+
+    .menu-item {
+      display: block;
+      width: 100%;
+
+      a {
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        line-height: 2.1;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  &__phrase {
+    --background: #9f0;
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    display: block;
+    width: 100%;
+  }
+
+  &__address {
+    --background: rgba(255, 0, 0, 0.4);
+
+    &__block {
+      display: block;
+      text-align: center;
+
+      &__address {
+        margin-top: 15px;
+      }
+
+      &__email {
+        word-break: break-all;
+      }
+    }
+  }
+}
