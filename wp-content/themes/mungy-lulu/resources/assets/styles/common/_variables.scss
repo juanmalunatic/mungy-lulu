@@ -69,7 +69,8 @@ $headings-font-weight:    400 !default;
 $headings-line-height:    1.1 !default;
 
 // Colors
-$purple-light: #56445e;
+$gray-smoke: #575761;
+$purple-light: #56445d;
 $purple-dark: #331241;
 
 $brand-primary: $purple-light;
@@ -80,3 +81,16 @@ $link-color: $brand-primary !default; //** Global textual link color.
 $link-hover-color: darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
 $headings-color: inherit !default;
+
+/** Hamburger icon */
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+
+/*
+$hamburger-layer-width: 20px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 4px;
+*/
+$hamburger-layer-color: $brand-primary;
+$hamburger-hover-opacity: 0.8;
+$hamburger-types: (spin);
