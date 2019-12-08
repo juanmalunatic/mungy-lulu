@@ -1,6 +1,8 @@
 <header class="banner header">
   <div class="container">
-    <nav class="navbar navbar-expand-lg">
+
+    <nav class="navbar navbar-expand-md">
+
       <!-- Logo  -->
       <div class="header__logo">
         <div class="header__logo__image">
@@ -12,6 +14,7 @@
         </div>
         <div class="header__logo__triangle"></div>
       </div>
+
       <!-- Actual menu -->
       <div class="header__menu">
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -24,6 +27,7 @@
           @endif
         </div>
       </div>
+
       <!-- Toggler (uses both BS and hamburguers) -->
       <div class="header__toggler">
         <button class="navbar-toggler hamburger hamburger--spin" type="button"
@@ -35,6 +39,8 @@
           </span>
         </button>
       </div>
+
     </nav>
+
   </div>
 </header>

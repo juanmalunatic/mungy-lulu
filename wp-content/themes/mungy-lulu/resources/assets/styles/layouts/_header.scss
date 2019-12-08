@@ -6,28 +6,39 @@
   @extend .nav-link;
 }
 
-.navbar {
-  align-items: start;
-  padding-top: 30px;
-  justify-content: center;
+.navbar-toggler:focus {
+  outline: none;
 }
 
 .header {
-  &__logo {
-    margin-right: 20px;
+  --logo-width: calc(0.8 * 110px);
+  --logo-height: calc(0.8 * 140px);
+  --navbar-pad-top: 30px;
 
+  .navbar {
+    position: static;
+    padding-top: var(--navbar-pad-top);
+    justify-content: space-between;
+  }
+
+  &__logo {
     &__triangle {
       /* https://css-tricks.com/snippets/css/css-triangle/ */
+      --tri-height: 40px;
+
       height: 0;
       width: 0;
-      border: transparent solid 55px;
-      border-top: white solid 40px;
-      margin-bottom: -40px;
+      border: transparent solid calc(var(--logo-width) / 2);
+      border-top: white solid var(--tri-height);
+      margin-bottom: calc(-2 * var(--tri-height));
     }
 
     &__image {
-      width: 110px;
-      height: 140px;
+      --width-lg: 110px;
+      --height-lg: 140px;
+
+      width: var(--logo-width);
+      height: var(--logo-height);
       background-color: white;
       background-image: url(../images/header__logo.png);
       background-position: center center;
@@ -36,7 +47,30 @@
     }
   }
 
-  &__toggler {
-    margin-left: auto;
+  &__menu {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: calc(var(--logo-height) + var(--navbar-pad-top));
+    left: 0;
+    background: #fff;
+
+    .nav-link {
+      font-family: $headings-font-family;
+      text-transform: lowercase;
+    }
+
+    .navbar-nav {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
+}
+
+*[role="document"] {
+  background: #f00;
 }
