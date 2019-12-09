@@ -17,6 +17,7 @@
 
   .navbar {
     position: static;
+    padding: 0.5rem 0;
     padding-top: var(--navbar-pad-top);
     justify-content: space-between;
   }
@@ -45,6 +46,12 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+
+    &__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__menu {
@@ -54,6 +61,14 @@
     top: calc(var(--logo-height) + var(--navbar-pad-top));
     left: 0;
     background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 10px 14px -6px;
+
+    @include media-breakpoint-up(md) {
+      position: static;
+      width: auto;
+      margin-left: auto;
+      box-shadow: none;
+    }
 
     .nav-link {
       font-family: $headings-font-family;
@@ -69,8 +84,4 @@
       text-decoration: underline;
     }
   }
-}
-
-*[role="document"] {
-  background: #f00;
 }

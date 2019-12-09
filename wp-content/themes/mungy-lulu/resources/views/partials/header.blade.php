@@ -6,7 +6,7 @@
       <!-- Logo  -->
       <div class="header__logo">
         <div class="header__logo__image">
-          <a class="navbar-brand" href="{{ home_url('/') }}" title="{{ get_bloginfo('name', 'display') }}">
+          <a class="header__logo__link navbar-brand" href="{{ home_url('/') }}" title="{{ get_bloginfo('name', 'display') }}">
             <h1 class="sr-only">
                 {{ get_bloginfo('name', 'display') }}
             </h1>
