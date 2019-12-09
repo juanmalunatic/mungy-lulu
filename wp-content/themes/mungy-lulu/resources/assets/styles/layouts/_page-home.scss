@@ -1,0 +1,27 @@
+.home {
+  .hero {
+    height: 500px;
+    background-image: url(../images/home__hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+
+    &__text {
+      margin-top: auto;
+      margin-left: auto;
+      padding-right: 30px;
+      padding-bottom: 15px;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+      line-height: 1.2;
+
+      span {
+        display: block;
+        font-family: $headings-font-family;
+        font-size: $font-size-h1;
+        color: white;
+        text-transform: uppercase;
+        text-align: right;
+      }
+    }
+  }
+}
