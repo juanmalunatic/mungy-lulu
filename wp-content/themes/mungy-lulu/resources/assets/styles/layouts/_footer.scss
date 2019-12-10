@@ -53,8 +53,9 @@
     height: var(--paws-height);
     background-color: transparent;
     background-image: url(../images/footer__paws.png);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: contain;
+    background-position: center center;
     position: absolute;
     top: calc(-0.5 * var(--paws-height));
     left: calc(-0.5 * var(--paws-width));
@@ -100,7 +101,9 @@
       }
 
       &__email {
-        word-break: break-all;
+        --word-break: break-all;
+
+        font-size: $font-size-small;
       }
     }
   }

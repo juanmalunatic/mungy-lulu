@@ -21,7 +21,7 @@
       span {
         display: block;
         font-family: $headings-font-family;
-        font-size: $font-size-h1;
+        font-size: $font-size-h2;
         color: white;
         text-shadow: $text-shadow;
         text-transform: uppercase;
@@ -128,8 +128,8 @@
       margin-bottom: $grid-gutter-width;
 
       &__title {
-        height: 185px;
-        width: 50px;
+        height: 218px;
+        width: 41px;
         text-align: center;
         background: #fff;
         position: relative;
@@ -140,9 +140,9 @@
           margin: 0;
           padding: 0;
           text-transform: lowercase;
-          font-size: $font-size-h1;
-          top: 68px;
-          left: -62px;
+          font-size: $font-size-h2;
+          top: 76px;
+          left: -84px;
         }
       }
 

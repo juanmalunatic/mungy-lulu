@@ -45,22 +45,23 @@ $font-weight-normal: 450;
 $font-weight-bold  : 900;
 
 $font-size-base:  1rem !default;
-$font-size-large: ceil(($font-size-base * 1.25)) !default;  // ~18px
-$font-size-small: ceil(($font-size-base * 0.85)) !default;  // ~12px
+$font-size-large: $font-size-base * 1.25 !default;  // ~18px
+$font-size-small: $font-size-base * 0.95 !default;  // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.428571429 !default; // 20/14
+$line-height-base: 2 !default; // 20/14
 
 //== Headings
 $font-size-base-headers: $font-size-base * 1.1;
 
 /* stylelint-disable */
-$font-size-h1: $font-size-base-headers * 2.60 !default; // ~36px
-$font-size-h2: $font-size-base-headers * 2.15 !default; // ~30px
-$font-size-h3: $font-size-base-headers * 1.70 !default; // ~24px
-$font-size-h4: $font-size-base-headers * 1.25 !default; // ~18px
-$font-size-h5: $font-size-base-headers * 1.00 !default;
-$font-size-h6: $font-size-base-headers * 0.85 !default; // ~12px
+/* Each step goes /1.45*/
+$font-size-h1: $font-size-base-headers * 4.60 !default;
+$font-size-h2: $font-size-base-headers * 3.17 !default;
+$font-size-h3: $font-size-base-headers * 2.20 !default;
+$font-size-h4: $font-size-base-headers * 1.50 !default;
+$font-size-h5: $font-size-base-headers * 1.10 !default;
+$font-size-h6: $font-size-base-headers * 1.00 !default;
 /* stylelint-enable */
 
 //** By default, this inherits from the `<body>`.

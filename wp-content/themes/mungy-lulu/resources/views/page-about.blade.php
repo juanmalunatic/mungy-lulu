@@ -1,29 +1,76 @@
 @extends('layouts.app')
 
 @section('content')
-  @while(have_posts()) @php the_post() @endphp
-    @include('partials.page-header')
-    <?php //@include('partials.content-page') ?>
-  @endwhile
-  <pre style="background:#f90; white-space: pre-wrap;">
-    {{$about_intro_text}}
+<div class="about" id="about">
 
-    {{$about_intro_highlight}}
+  <!-- Intro -->
+  <div class="row">
+    <div class="about__hero  col-12 col-lg-6">
+    </div>
+    <div class="about__intro col-12 col-lg-6">
+      <h1 class="about__intro__title">
+        {!! get_the_title() !!}
+      </h1>
+      <div class="about__intro__highlight">
+          {{$about_intro_highlight}}
+      </div>
+      <div class="about__intro__text">
+        {{$about_intro_text}}
+      </div>
+    </div>
+  </div>
 
-    {{$about_intro_text}}
+  <!-- Marquee -->
+  <div class="marquee"></div>
 
-    {{$about_number_news}}
+  <!-- Stats -->
+  <div class="about__stats row">
 
-    {{$about_number_clients}}
+    <div class="about__stats__group">
+      <div class="number">
+        {{$about_number_news}}
+      </div>
+      <div class="text">
+        in the news
+      </div>
+    </div>
 
-    {{$about_number_hikes}}
+    <div class="about__stats__group">
+      <div class="number">
+        {{$about_number_clients}}
+      </div>
+      <div class="text">
+        :) clients
+      </div>
+    </div>
 
-    {{$about_number_kisses}}
+    <div class="about__stats__group">
+      <div class="number">
+        {{$about_number_hikes}}
+      </div>
+      <div class="text">
+        hikes
+      </div>
+    </div>
 
-    @debug
-  </pre>
+      <div class="about__stats__group">
+        <div class="number">
+          {{$about_number_kisses}}
+        </div>
+        <div class="text">
+          dog kisses
+        </div>
+      </div>
 
-  TO-DO implement testimonial w/ global data
+  </div>
+
+  <!-- Testimonials -->
+  <div class="hola" style="background:#f90">
+    TO-DO implement testimonial w/ global data
+  </div>
+</div>
+
+
 
 @endsection
 

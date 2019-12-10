@@ -18,7 +18,7 @@
       <div class="footer__block footer__block__address col-md-3">
         <address class="footer__address">
           <a class="footer__address__block footer__address__block__email" href="luludogdaycare@gmail.com">
-            luludogdaycare@gmail.com
+            luludogdaycare<wbr>@gmail.com
           </a>
           <a class="footer__address__block footer__address__block__phone" href="tel:+14134649200">
             413-464-9200

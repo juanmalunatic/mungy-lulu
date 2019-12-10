@@ -1,0 +1,66 @@
+.about {
+  --vspace: 30px;
+
+  &__hero {
+    background: url(../images/about__hero.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+
+    @include media-breakpoint-up(lg) {
+      height: auto;
+    }
+  }
+
+  &__intro {
+    @include media-breakpoint-up(lg) {
+      --padding: calc(2 * var(--vspace));
+
+      padding-top: var(--padding);
+      padding-left: var(--padding);
+    }
+
+    &__title {
+      margin-top: var(--vspace);
+      margin-bottom: var(--vspace);
+      text-transform: lowercase;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
+    }
+
+    &__highlight {
+      font-size: $font-size-large;
+      margin-bottom: var(--vspace);
+      line-height: 1.8;
+      font-weight: bold;
+    }
+  }
+
+  &__stats {
+    --blankspace: calc(3 * var(--vspace));
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: 1;
+    margin-top: var(--blankspace);
+    margin-bottom: var(--blankspace);
+
+    &__group {
+      width: 50%;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        width: 25%;
+      }
+
+      .number {
+        font-family: $headings-font-family;
+        font-size: $font-size-h2;
+        font-weight: bold;
+        margin-bottom: -15px;
+      }
+    }
+  }
+}
