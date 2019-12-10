@@ -60,6 +60,10 @@
       justify-content: center;
       position: relative;
       text-shadow: $text-shadow;
+
+      @include media-breakpoint-up(lg) {
+        height: 600px;
+      }
     }
 
     &__title {
@@ -87,6 +91,11 @@
       .home__box__image {
         background-image: url(../images/home__services.jpg);
         background-size: cover;
+        background-position: top center;
+
+        @include media-breakpoint-up(lg) {
+          height: 80% center;
+        }
       }
     }
 
@@ -146,8 +155,8 @@
     &__image {
       background-image: url(../images/home__contact.jpg);
       background-size: cover;
-      background-position: center center;
-      height: 100%;
+      background-position: 32% center;
+      height: calc(100% - 150px);
     }
   }
 }

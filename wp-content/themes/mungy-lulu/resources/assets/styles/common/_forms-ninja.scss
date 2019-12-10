@@ -48,4 +48,8 @@
   .nf-form-content textarea:focus {
     color: #000;
   }
+
+  .nf-form-content textarea.ninja-forms-field {
+    height: 150px;
+  }
 }
