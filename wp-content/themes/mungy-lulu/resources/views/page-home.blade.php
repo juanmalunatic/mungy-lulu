@@ -76,7 +76,7 @@
           </h3>
         </div>
         <div class="home__contact__form__gf">
-          TO-DO add Gravity Form here.
+          @php(dynamic_sidebar('sidebar-contact'))
         </div>
       </div>
     </div>
