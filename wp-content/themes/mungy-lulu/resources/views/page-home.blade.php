@@ -16,69 +16,74 @@
     <div class="marquee"></div>
 
     <!-- Box sections -->
-    <div class="home__box home__box__services">
-      <div class="home__box__image">
-          <div class="home__box__title">
-            {{$home_services_title}}
-          </div>
-          <div class="home__box__subtitle">
-            {{$home_services_subtitle}}
-          </div>
-          <div class="home__box__textcorner">
-            <!-- -->
-          </div>
-      </div>
-      <div class="home__box__link">
-        <a href="#">
-          Explore
-        </a>
-    </div>
-  </div>
+    <div class="row">
 
-  <div class="home__box home__box__about">
-      <div class="home__box__image">
-          <div class="home__box__title">
-            {{$home_about_title}}
+        <div class="home__box home__box__services col-12 col-md-6">
+            <div class="home__box__image">
+                <div class="home__box__textcorner">
+                    <!-- -->
+                </div>
+                <div class="home__box__title">
+                  <h2>
+                    <a href="#">
+                      {{$home_services_title}}
+                    </a>
+                  </h2>
+                </div>
+                <div class="home__box__subtitle">
+                  {{$home_services_text}}
+                </div>
+            </div>
+            <div class="home__box__link">
+              <a href="{{$home_services_link->url}}" target="{{$home_services_link->target}}">
+                {{$home_services_link->title}}
+              </a>
           </div>
-          <div class="home__box__subtitle">
-            <!-- -->
+        </div>
+
+        <div class="home__box home__box__about col-12 col-md-6">
+            <div class="home__box__image">
+                <div class="home__box__textcorner">
+                    {{$home_about_text}}
+                </div>
+                <div class="home__box__title">
+                  <h2>
+                    <a href="#">
+                      {{$home_about_title}}
+                    </a>
+                  </h2>
+                </div>
+                <div class="home__box__subtitle">
+                  <!-- -->
+                </div>
+            </div>
+            <div class="home__box__link">
+              <a href="{{$home_about_link->url}}" target="{{$home_about_link->target}}">
+                {{$home_about_link->title}}
+              </a>
           </div>
-          <div class="home__box__textcorner">
-            {{$home_about_text}}
-          </div>
-      </div>
-      <div class="home__box__link">
-        <a href="#">
-          Learn more
-        </a>
+        </div>
+
     </div>
-  </div>
 
   <!-- Contact -->
-  <div class="home__contact">
-    <div class="home__contact__form">
-      TO-DO add Gravity Form here.
+  <div class="home__contact row">
+    <div class=" col-12 col-md-6">
+      <div class="home__contact__form">
+        <div class="home__contact__form__title">
+          <h3>
+            Contact
+          </h3>
+        </div>
+        <div class="home__contact__form__gf">
+          TO-DO add Gravity Form here.
+        </div>
+      </div>
     </div>
-    <div class="home__contact__image">
-      Doggies :)
+    <div class="col-12 col-md-6">
+      <div class="home__contact__image"></div>
     </div>
   </div>
-
-  <pre style="background:#a6f; white-space: pre-wrap;">
-
-    {{$home_services_title}}
-
-    {{$home_services_text}}
-
-    {{$home_about_title}}
-
-    {{$home_about_text}}
-
-    <?php var_dump($home_services_link); ?>
-
-    <?php var_dump($home_about_link); ?>
-
-  </pre>
 
 @endsection
 

@@ -1,4 +1,8 @@
 .home {
+  $text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+
+  /* Hero section */
+
   .hero {
     height: 500px;
     background-image: url(../images/home__hero.jpg);
@@ -11,7 +15,7 @@
       margin-left: auto;
       padding-right: 30px;
       padding-bottom: 15px;
-      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+      text-shadow: $text-shadow;
       line-height: 1.2;
 
       span {
@@ -19,9 +23,131 @@
         font-family: $headings-font-family;
         font-size: $font-size-h1;
         color: white;
+        text-shadow: $text-shadow;
         text-transform: uppercase;
         text-align: right;
       }
+    }
+  }
+
+  /* Box section */
+
+  &__box {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    font-size: $font-size-h6;
+    font-family: $headings-font-family;
+    letter-spacing: 1.5px;
+
+    /*
+    @include media-breakpoint-up(md) {
+      &:nth-of-type(1) {
+        padding-right: 7.5px;
+      }
+
+      &:nth-of-type(2) {
+        padding-left: 7.5px;
+      }
+    }
+    */
+
+    &__image {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      position: relative;
+      text-shadow: $text-shadow;
+    }
+
+    &__title {
+      a {
+        font-size: $font-size-h1;
+        color: #fff;
+        text-transform: lowercase;
+        letter-spacing: 0;
+      }
+    }
+
+    &__link {
+      padding: 1rem 2rem;
+    }
+
+    &__textcorner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-right: 30px;
+      padding-top: 30px;
+    }
+
+    &__services {
+      .home__box__image {
+        background-image: url(../images/home__services.jpg);
+        background-size: cover;
+      }
+    }
+
+    &__about {
+      .home__box__image {
+        background-image: url(../images/home__about.png);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 200px auto;
+        background-color: #331241;
+      }
+
+      .home__box__title h2 a {
+        color: #56445e;
+      }
+
+      .home__box__link {
+        text-align: right;
+      }
+    }
+  }
+
+  /* Contact section */
+  &__contact {
+    margin-top: 45px;
+    margin-bottom: 100px;
+
+    &__form {
+      display: flex;
+      margin-bottom: $grid-gutter-width;
+
+      &__title {
+        height: 185px;
+        width: 50px;
+        text-align: center;
+        background: #fff;
+        position: relative;
+
+        h3 {
+          position: absolute;
+          transform: rotateZ(-90deg);
+          margin: 0;
+          padding: 0;
+          text-transform: lowercase;
+          font-size: $font-size-h1;
+          top: 68px;
+          left: -62px;
+        }
+      }
+
+      &__gf {
+        flex-grow: 1;
+        padding-left: $grid-gutter-width;
+      }
+    }
+
+    &__image {
+      background-image: url(../images/home__contact.jpg);
+      background-size: cover;
+      background-position: center center;
+      height: 500px;
     }
   }
 }
