@@ -11,7 +11,7 @@
 }
 
 .header {
-  --logo-width: calc(0.8 * 110px);
+  --logo-width: calc(1.1 * 110px);
   --logo-height: calc(0.8 * 140px);
   --navbar-pad-top: 30px;
 
@@ -31,7 +31,7 @@
       width: 0;
       border: transparent solid calc(var(--logo-width) / 2);
       border-top: white solid var(--tri-height);
-      margin-bottom: calc(-2 * var(--tri-height));
+      margin-bottom: -101px;
     }
 
     &__image {

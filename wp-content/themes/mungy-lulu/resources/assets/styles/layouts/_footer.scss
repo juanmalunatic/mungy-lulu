@@ -1,5 +1,5 @@
 .footer {
-  --paws-height: 56px;
+  --paws-height: calc(0.8 * 56px);
   --padding-top: 30px;
 
   font-weight: 500;
@@ -46,7 +46,7 @@
   }
 
   &__paws {
-    --paws-width: 183px;
+    --paws-width: calc(0.8 * 183px);
 
     display: block;
     width: var(--paws-width);
@@ -54,6 +54,7 @@
     background-color: transparent;
     background-image: url(../images/footer__paws.png);
     background-repeat: none;
+    background-size: contain;
     position: absolute;
     top: calc(-0.5 * var(--paws-height));
     left: calc(-0.5 * var(--paws-width));
