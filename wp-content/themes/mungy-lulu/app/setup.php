@@ -91,9 +91,15 @@ add_action('widgets_init', function () {
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
     ] + $config);
+    // Reusable sidebar for contact form
     register_sidebar([
         'name'          => __('Contact form', 'sage'),
         'id'            => 'sidebar-contact'
+    ] + $config);
+    // Reusable sidebar for testimonials
+    register_sidebar([
+        'name'          => __('Testimonials', 'sage'),
+        'id'            => 'sidebar-testimonials'
     ] + $config);
 });
 

@@ -1,3 +1,5 @@
+/* Marquee component */
+
 .marquee {
   background-image: url(../images/common__marquee.svg);
   background-repeat: repeat-x;
@@ -6,4 +8,49 @@
   height: 35px;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+/* Testimonial component */
+
+.strong-testimonials-view-widget {
+  h3 {
+    display: none;
+  }
+}
+
+.testim {
+  &__row {
+    display: flex;
+  }
+
+  &__block {
+    --vtext-width: 70px;
+
+    background-repeat: no-repeat;
+
+    &__vtext {
+      width: var(--vtext-width);
+      background-image: url(../images/testimonials__vtext__min.svg);
+      background-size: 25% auto;
+      background-position: center center;
+    }
+
+    &__dog {
+      width: calc(30% - var(--vtext-width));
+      background-image: url(../images/testimonials__dog.jpg);
+      background-size: cover;
+      background-position: center center;
+    }
+
+    &__text {
+      width: 35%;
+    }
+
+    &__group {
+      width: 35%;
+      background-image: url(../images/testimonials__group.png);
+      background-size: cover;
+      background-position: center center;
+    }
+  }
 }

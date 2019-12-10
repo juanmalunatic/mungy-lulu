@@ -65,9 +65,7 @@
   </div>
 
   <!-- Testimonials -->
-  <div class="hola" style="background:#f90">
-    TO-DO implement testimonial w/ global data
-  </div>
+  @include('partials.testimonials')
 </div>
 
 
