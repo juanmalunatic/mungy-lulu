@@ -1,13 +1,17 @@
 .contact {
+  --vspace: 30px;
+
   &__area__title {
     text-align: center;
     position: relative;
     z-index: 200;
     text-transform: lowercase;
+    margin-bottom: var(--vspace);
   }
 
   &__area__banner {
     display: flex;
+    margin-bottom: var(--vspace);
 
     .banner-img {
       width: 33.3%;
@@ -29,6 +33,7 @@
 
         @include media-breakpoint-up(md) {
           width: calc(100% * 4 / 12);
+          background-position: 80% center;
         }
       }
 
@@ -37,6 +42,110 @@
 
         @include media-breakpoint-up(md) {
           width: calc(100% * 5 / 12);
+        }
+      }
+    }
+  }
+
+  /* This one's shared */
+  .contact-instructions {
+    text-align: center;
+    margin-bottom: var(--vspace);
+
+    h2 {
+      font-size: $font-size-h6;
+      font-family: $font-family-base;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__area__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--vspace);
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .ca-form {
+      width: 100%;
+      margin-bottom: calc(2 * var(--vspace));
+
+      &__first {
+        @include media-breakpoint-up(md) {
+          width: calc(100% * 7 / 12);
+          max-width: 550px;
+          padding-right: 30px;
+        }
+      }
+
+      &__last {
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+          text-align: right;
+          width: calc(100% * 5 / 12);
+          padding-left: 30px;
+        }
+
+        &__text {
+          margin-bottom: var(--vspace);
+          display: none;
+
+          @include media-breakpoint-up(md) {
+            display: block;
+            text-align: right;
+            padding-top: 10px;
+          }
+        }
+
+        &__address {
+          margin-bottom: var(--vspace);
+
+          .add-item {
+            display: block;
+          }
+
+          .phone {
+            font-family: $headings-font-family;
+
+            @include media-breakpoint-up(md) {
+              font-size: $font-size-h3;
+            }
+          }
+        }
+
+        &__social {
+          display: flex;
+          justify-content: center;
+
+          @include media-breakpoint-up(md) {
+            justify-content: flex-end;
+          }
+        }
+
+        .social {
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-color: #fff;
+          width: 50px;
+          height: 50px;
+          display: block;
+
+          &.facebook {
+            background-image: url(../images/social-fb.jpg);
+            margin-right: 7.5px;
+          }
+
+          &.twitter {
+            background-image: url(../images/social-tw.jpg);
+            margin-left: 7.5px;
+          }
         }
       }
     }

@@ -19,28 +19,36 @@
   <div class="contact__area__form">
 
     <!-- Chat -->
-    <div class="ca-form__first">
-      @php(dynamic_sidebar('sidebar-contact'))
+    <div class="ca-form ca-form__first">
+      <div class="contact-instructions hidden-md-up">
+        <h2>For bookings or questions</h2>
+        <span>
+          Please fill out the form
+        </span>
+      </div>
+      <div>
+        @php(dynamic_sidebar('sidebar-contact'))
+      </div>
     </div>
 
     <!-- Info -->
-    <div class="ca-form__last">
-      <div class="ca-form__last__text">
+    <div class="ca-form ca-form__last">
+      <div class="ca-form__last__text contact-instructions">
         <h2>For bookings or questions</h2>
         <span>
-          Please fill out form
+          Please fill out the form
         </span>
       </div>
       <div class="ca-form__last__address">
         <address>
-          <span class="phone">413.464.9200</span>
-          <span class="mail">luludogdaycare@gmail.com</span>
-          <span class="addr">1525 West Housatonit St Pittsfield MA 01201</span>
+          <span class="add-item phone">413.464.9200</span>
+          <span class="add-item mail">luludogdaycare@gmail.com</span>
+          <span class="add-item addr">1525 West Housatonic St Pittsfield MA 01201</span>
         </address>
       </div>
       <div class="ca-form__last__social">
-        <a href="#" class="social facebook">F</a>
-        <a href="#" class="social twitter">T</a>
+        <a href="#" class="social facebook"></a>
+        <a href="#" class="social twitter"></a>
       </div>
     </div>
   </div>
