@@ -19,38 +19,114 @@
 }
 
 .testim {
+  margin-bottom: 105px;
+
   &__row {
-    display: flex;
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
   }
 
   &__block {
-    --vtext-width: 70px;
-
     background-repeat: no-repeat;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      --margin-sides: 15px;
+      --vtext-width: 70px;
+    }
 
     &__vtext {
-      width: var(--vtext-width);
-      background-image: url(../images/testimonials__vtext__min.svg);
-      background-size: 25% auto;
-      background-position: center center;
+      background-image: none;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        background-image: url(../images/testimonials__vtext__min.svg);
+        background-position: center center;
+        background-size: 25% auto;
+        width: var(--vtext-width);
+        height: auto;
+      }
+
+      .htext {
+        font-family: $headings-font-family;
+        font-size: $font-size-h4;
+        text-transform: uppercase;
+        color: $purple-dark;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
     }
 
     &__dog {
-      width: calc(30% - var(--vtext-width));
       background-image: url(../images/testimonials__dog.jpg);
       background-size: cover;
-      background-position: center center;
+      background-position: center 25%;
+      height: 300px;
+
+      @include media-breakpoint-up(md) {
+        width: calc(30% - var(--vtext-width));
+        height: auto;
+        background-position: center center;
+      }
     }
 
     &__text {
-      width: 35%;
+      margin: 0;
+      background-color: $purple-dark;
+      color: #9a83a0;
+
+      @include media-breakpoint-up(md) {
+        width: calc(35% - var(--margin-sides));
+        margin-left: var(--margin-sides);
+      }
+
+      .strong-view.simple .testimonial {
+        &-inner {
+          padding: 30px;
+        }
+
+        &-content,
+        &-name {
+          text-align: center;
+        }
+
+        &-name {
+          text-transform: uppercase;
+          font-weight: bold;
+          padding-top: 30px;
+          padding-bottom: 15px;
+        }
+
+        &-content p {
+          &::before {
+            content: "“";
+          }
+
+          &::after {
+            content: "”";
+          }
+        }
+      }
     }
 
     &__group {
-      width: 35%;
       background-image: url(../images/testimonials__group.png);
       background-size: cover;
       background-position: center center;
+      height: 300px;
+
+      @include media-breakpoint-up(md) {
+        width: calc(35% - var(--margin-sides));
+        height: auto;
+        margin-left: var(--margin-sides);
+      }
     }
+  }
+}
+
+.hidden-md-up {
+  @include media-breakpoint-up(md) {
+    display: none;
   }
 }
