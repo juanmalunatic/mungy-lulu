@@ -1,0 +1,44 @@
+.contact {
+  &__area__title {
+    text-align: center;
+    position: relative;
+    z-index: 200;
+    text-transform: lowercase;
+  }
+
+  &__area__banner {
+    display: flex;
+
+    .banner-img {
+      width: 33.3%;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+      &__1 {
+        background-image: url(../images/contact__banner__1.jpg);
+
+        @include media-breakpoint-up(md) {
+          width: calc(100% * 3 / 12);
+        }
+      }
+
+      &__2 {
+        background-image: url(../images/contact__banner__2.jpg);
+
+        @include media-breakpoint-up(md) {
+          width: calc(100% * 4 / 12);
+        }
+      }
+
+      &__3 {
+        background-image: url(../images/contact__banner__3.jpg);
+
+        @include media-breakpoint-up(md) {
+          width: calc(100% * 5 / 12);
+        }
+      }
+    }
+  }
+}
