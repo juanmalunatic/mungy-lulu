@@ -1,5 +1,4 @@
 TO-DO pipe command
 
-magick convert contact__banner__3__lg.jpg -resize 25% -monitor min.jpg
-magick convert -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -monitor min.jpg contact__banner__3.jpg 
+magick convert services__hiking__lg.jpg -resize 20% -monitor min.jpg && magick convert -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -monitor min.jpg services__hiking.jpg
 
