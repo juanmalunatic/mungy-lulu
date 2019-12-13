@@ -4,9 +4,7 @@
 <div class="contact" id="contact">
 
   <div class="contact__area__title">
-    <h1 class="title">
-      {!! get_the_title() !!}
-    </h1>
+    @include('partials.page-header');
   </div>
 
   <!-- Banner images -->

@@ -1,5 +1,5 @@
-<div class="page-header">
-  <h1 {{ $hide_title ? 'class=sr-only' : ''}}>
-    {!! App::title() !!}
+<div class="page-title">
+  <h1 class="title {{ $hide_title ? 'sr-only' : ''}}">
+    {!! get_the_title() !!}
   </h1>
 </div>
