@@ -6,7 +6,7 @@
 
   <div id="home" class="home">
     <!-- Hero -->
-    <div class="hero">
+    <div class="hero content-wide">
       <div class="hero__text">
           {!!$home_title!!}
       </div>

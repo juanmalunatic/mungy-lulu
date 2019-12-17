@@ -1,5 +1,5 @@
-<header class="banner header">
-  <div class="container">
+<header class="banner header content-wide">
+  <div class="container-fluid">
 
     <nav class="navbar navbar-expand-md">
 

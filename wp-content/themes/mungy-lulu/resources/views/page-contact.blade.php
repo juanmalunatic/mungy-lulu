@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="contact" id="contact">
+<div class="contact content-wide" id="contact">
 
   <div class="contact__area__title">
     @include('partials.page-header')
@@ -14,7 +14,7 @@
     <div class="banner-img banner-img__3"></div>
   </div>
 
-  <div class="contact__area__form">
+  <div class="contact__area__form container">
 
     <!-- Chat -->
     <div class="ca-form ca-form__first">

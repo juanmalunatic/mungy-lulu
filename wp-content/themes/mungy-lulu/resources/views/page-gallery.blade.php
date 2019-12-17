@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="gallery" id="gallery">
+<div class="gallery content-wide" id="gallery">
 
   <div class="gallery__area__title">
     @include('partials.page-header')

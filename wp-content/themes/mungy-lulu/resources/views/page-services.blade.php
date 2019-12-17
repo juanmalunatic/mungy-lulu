@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="services" id="services">
+<div class="services content-wide" id="services">
 
   <div class="services__header">
     @include('partials.page-header')
