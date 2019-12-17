@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="about" id="about">
+<div class="about content-wide" id="about">
 
   <!-- Intro -->
   <div class="row">
