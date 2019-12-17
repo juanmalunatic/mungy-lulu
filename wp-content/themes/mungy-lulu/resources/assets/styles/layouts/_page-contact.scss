@@ -26,7 +26,10 @@
       }
 
       &__2 {
+        /*
+        This is replaced by a custom field
         background-image: url(../images/contact__banner__2.jpg);
+        */
 
         @include media-breakpoint-up(md) {
           width: calc(100% * 4 / 12);

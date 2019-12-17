@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- Actual content -->
 <div class="contact content-wide" id="contact">
 
   <div class="contact__area__title">
@@ -50,7 +51,12 @@
       </div>
     </div>
   </div>
-
 </div>
+<!-- Allow bg customization -->
+<style>
+.contact__area__banner .banner-img__2 {
+  background-image: url(<?php echo $image_middle->url; ?>);
+}
+</style>
 @endsection
 
