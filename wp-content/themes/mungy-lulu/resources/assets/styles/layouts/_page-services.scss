@@ -6,12 +6,14 @@
 
   @include media-breakpoint-up(lg) {
     flex-wrap: nowrap;
+    margin-bottom: 120px;
+    margin-top: 60px;
   }
 
   .block {
     &__selector {
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 60px;
 
       @include media-breakpoint-up(lg) {
         width: 150px;
@@ -93,10 +95,6 @@
           }
         }
 
-        &__hikes {
-          background-image: url(../images/services__hikes.jpg);
-        }
-
         &__overnight {
           background-image: url(../images/services__overnight.jpg);
           background-position: 20% center;
@@ -114,6 +112,12 @@
         width: auto;
         height: auto;
         margin-top: 0;
+      }
+
+      &__content {
+        @include media-breakpoint-up(lg) {
+          min-height: 450px;
+        }
       }
     }
   }
@@ -158,5 +162,19 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: $font-size-h5;
+  }
+
+  .paw {
+    background-image: url(../images/services__paw.png);
+    width: 186px;
+    height: 193px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+    margin-left: auto;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
   }
 }
