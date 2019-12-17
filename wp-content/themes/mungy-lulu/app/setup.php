@@ -101,6 +101,11 @@ add_action('widgets_init', function () {
         'name'          => __('Testimonials', 'sage'),
         'id'            => 'sidebar-testimonials'
     ] + $config);
+    // Reusable sidebar for gallery
+    register_sidebar([
+        'name'          => __('Gallery', 'sage'),
+        'id'            => 'sidebar-gallery'
+    ] + $config);
 });
 
 /**

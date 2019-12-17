@@ -1,15 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-  @while(have_posts()) @php the_post() @endphp
-    @include('partials.page-header')
-    <?php //@include('partials.content-page')?>
-  @endwhile
-  <pre style="background:#f6a; white-space: pre-wrap;">
-    @debug
-  </pre>
+<div class="gallery" id="gallery">
 
-  TO-DO install gravity forms to implement contact form
+  <div class="gallery__area__title">
+    @include('partials.page-header')
+    <h2 class="title-secondary"> Meet our friends </h2>
+  </div>
+
+  @while (have_posts()) @php the_post() @endphp
+    @include ('partials.content-page')
+  @endwhile
 
 @endsection
 
