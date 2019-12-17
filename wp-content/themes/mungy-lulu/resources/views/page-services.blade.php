@@ -72,5 +72,17 @@
     @include('partials.testimonials')
   </div>
 
+  <!-- Background change based on custom fields -->
+  <style>
+    .services__main .block__picture .picture__daycare {
+      background-image: url(<?php echo $services_svc1_image->url; ?>);
+    }
+    .services__main .block__picture .picture__dog-spa {
+      background-image: url(<?php echo $services_svc2_image->url; ?>);
+    }
+    .services__main .block__picture .picture__overnight {
+      background-image: url(<?php echo $services_svc3_image->url; ?>);
+    }
+  </style>
 </div>
 @endsection
