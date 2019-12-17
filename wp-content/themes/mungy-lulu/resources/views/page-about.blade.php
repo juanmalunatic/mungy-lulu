@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="about content-wide" id="about">
+<div class="about content-wide">
 
   <!-- Intro -->
   <div class="row">
@@ -19,10 +19,12 @@
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Marquee -->
-  <div class="marquee"></div>
+<!-- Marquee -->
+<div class="marquee"></div>
 
+<div class="about content-wide">
   <!-- Stats -->
   <div class="about__stats row">
 

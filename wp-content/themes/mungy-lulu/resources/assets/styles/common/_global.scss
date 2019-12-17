@@ -1,13 +1,41 @@
 /* Marquee component */
 
 .marquee {
-  background-image: url(../images/common__marquee.svg);
+  --duration: 20s;
+
+  background-image: url(../images/common__marquee__2nd.svg);
+  background-position: 0 0;
   background-repeat: repeat-x;
   background-size: contain;
-  width: 100%;
+  width: 400%;
   height: 35px;
   margin-top: 60px;
   margin-bottom: 60px;
+  margin-left: -15px;
+  animation: animatedBackground var(--duration) linear infinite;
+
+  @include media-breakpoint-up(sm) {
+    --duration: 10s;
+
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    --duration: 15s;
+  }
+
+  @include media-breakpoint-up(lg) {
+    --duration: 18s;
+  }
+
+  @include media-breakpoint-up(xl) {
+    --duration: 20s;
+  }
+}
+
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
 }
 
 /* Page title */
