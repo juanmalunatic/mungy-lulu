@@ -29,6 +29,8 @@
 
       @include media-breakpoint-up(md) {
         order: 2;
+        flex-direction: column;
+        justify-content: center;
       }
     }
 
@@ -89,8 +91,21 @@
     width: 100%;
   }
 
+  &__social {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+
+    .fa-facebook {
+      margin-right: 15px;
+    }
+  }
+
   &__address {
     --background: rgba(255, 0, 0, 0.4);
+
+    font-size: var(--font-size-small);
 
     &__block {
       display: block;
@@ -102,8 +117,6 @@
 
       &__email {
         --word-break: break-all;
-
-        font-size: $font-size-small;
       }
     }
   }

@@ -14,6 +14,16 @@
         <span class="footer__phrase">
           Love us & leave us
         </span>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/loveusandleaveus/">
+            <span class="sr-only">Love Us & Leave Us - Facebook</span>
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.facebook.com/loveusandleaveus/">
+            <span class="sr-only">Love Us & Leave Us - Instagram</span>
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
       <div class="footer__block footer__block__address col-md-3">
         <address class="footer__address">
