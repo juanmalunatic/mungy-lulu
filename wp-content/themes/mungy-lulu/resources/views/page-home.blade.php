@@ -54,7 +54,7 @@
                   </h2>
                 </div>
                 <div class="home__box__subtitle">
-                  <!-- -->
+                  <span class="text-invisible">Learn about our services</span>
                 </div>
             </div>
             <div class="home__box__link">
