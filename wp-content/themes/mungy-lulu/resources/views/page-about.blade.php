@@ -24,8 +24,9 @@
 <!-- Marquee -->
 <div class="marquee"></div>
 
+<!-- Stats
 <div class="about content-wide">
-  <!-- Stats -->
+  
   <div class="about__stats row">
 
     <div class="about__stats__group">
@@ -65,6 +66,7 @@
       </div>
 
   </div>
+  -->
 
   <!-- Testimonials -->
   @include('partials.testimonials')
