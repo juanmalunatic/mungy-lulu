@@ -16,7 +16,7 @@
     <div class="marquee"></div>
 
     <!-- Box sections -->
-    <div class="row">
+    <div class="row home__box__holder">
 
         <div class="home__box home__box__services col-12 col-md-6">
             <div class="home__box__image">
@@ -68,10 +68,10 @@
 
   <!-- Contact -->
   <div class="home__contact row">
-    <div class=" col-12 col-md-6">
+    <div class=" col-12 col-md-7 col-lg-6">
       <div class="home__contact__form">
         <div class="home__contact__form__title">
-          <h3>
+          <h3 class="sr-only">
             Contact
           </h3>
         </div>
@@ -80,7 +80,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-5 col-lg-6">
       <div class="home__contact__image"></div>
     </div>
   </div>
