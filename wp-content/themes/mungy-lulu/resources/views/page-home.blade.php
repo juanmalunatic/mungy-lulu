@@ -13,7 +13,9 @@
     </div>
 
     <!-- Marquee -->
-    <div class="marquee"></div>
+    <div class="home__marquee__holder">
+      <div class="marquee"></div>
+    </div>
 
     <!-- Box sections -->
     <div class="row home__box__holder">

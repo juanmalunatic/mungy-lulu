@@ -27,13 +27,25 @@
       span {
         display: block;
         font-family: $headings-font-family;
-        font-size: 0.9 * $font-size-h1;
+        font-size: $font-size-h2;
         color: white;
         text-shadow: $text-shadow;
         text-transform: uppercase;
         text-align: right;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 0.9 * $font-size-h1;
+        }
       }
     }
+  }
+
+  /* Contain the marquee so that it doesn't scroll on mobile */
+  &__marquee__holder {
+    width: calc(100% + 30px);
+    overflow-x: hidden;
+    position: relative;
+    left: -15px;
   }
 
   /* Box section */
