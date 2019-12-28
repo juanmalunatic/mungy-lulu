@@ -10,6 +10,7 @@ import common from './routes/common';
 import home from './routes/home';
 import aboutUs from './routes/about';
 import services from './routes/services';
+import gallery from './routes/gallery';
 import { library, dom } from '@fortawesome/fontawesome-svg-core'; // import then needed Font Awesome functionality
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'; // import the Facebook and Instagram icons
 
@@ -23,6 +24,8 @@ const routes = new Router({
   aboutUs,
   // Services
   services,
+  // Gallery
+  gallery,
 });
 
 // Load Events
