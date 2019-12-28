@@ -27,7 +27,7 @@
                 </div>
                 <div class="home__box__title">
                   <h2>
-                    <a href="#">
+                    <a href="/services">
                       {{$home_services_title}}
                     </a>
                   </h2>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="home__box__title">
                   <h2>
-                    <a href="#">
+                    <a href="/about">
                       {{$home_about_title}}
                     </a>
                   </h2>
