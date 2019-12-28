@@ -46,8 +46,8 @@
         </address>
       </div>
       <div class="ca-form__last__social">
-        <a href="#" class="social facebook"></a>
-        <a href="#" class="social twitter"></a>
+        <a class="social facebook"  href="https://www.facebook.com/loveusandleaveus/"></a>
+        <a class="social instagram" href="https://www.instagram.com/loveusandleaveus/"></a>
       </div>
     </div>
   </div>
