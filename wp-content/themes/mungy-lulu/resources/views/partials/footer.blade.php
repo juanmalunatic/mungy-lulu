@@ -15,11 +15,11 @@
           Love us & leave us
         </span>
         <div class="footer__social">
-          <a href="https://www.instagram.com/loveusandleaveus/">
+          <a href="https://www.facebook.com/loveusandleaveus/">
             <span class="sr-only">Love Us & Leave Us - Facebook</span>
             <i class="fab fa-facebook"></i>
           </a>
-          <a href="https://www.facebook.com/loveusandleaveus/">
+          <a href="https://www.instagram.com/loveusandleaveus/">
             <span class="sr-only">Love Us & Leave Us - Instagram</span>
             <i class="fab fa-instagram"></i>
           </a>
