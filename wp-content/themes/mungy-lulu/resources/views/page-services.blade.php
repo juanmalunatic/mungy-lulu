@@ -35,35 +35,40 @@
     <div class="block block__description">
 
       <div class="block__description__content">
-        <div class="service active service__daycare">
-          <h2> {{$services_svc1_title}} </h2>
-          <p>
-            {!!$service_svc1_content!!}
-          </p>
+
+        <input type="radio" name="radiotabs" id="d-daycare" checked>
+        <input type="radio" name="radiotabs" id="d-dog-spa">
+        <input type="radio" name="radiotabs" id="d-overnight">
+
+        <div class="services_holder">
+
+          <div class="service active service__daycare">
+            <h2> {{$services_svc1_title}} </h2>
+            <p>
+              {!!$service_svc1_content!!}
+            </p>
+            @include('partials.page-services-block-extra')
+          </div>
+
+          <div class="service service__dog-spa">
+            <h2> {{$services_svc2_title}} </h2>
+            <p>
+              {!!$service_svc2_content!!}
+            </p>
+            @include('partials.page-services-block-extra')
+          </div>
+
+          <div class="service service__overnight">
+            <h2> {{$services_svc3_title}} </h2>
+            <p>
+              {!!$service_svc3_content!!}
+            </p>
+            @include('partials.page-services-block-extra')
+          </div>
+
         </div>
 
-        <div class="service service__dog-spa">
-          <h2> {{$services_svc2_title}} </h2>
-          <p>
-            {!!$service_svc2_content!!}
-          </p>
-        </div>
-
-        <div class="service service__overnight">
-          <h2> {{$services_svc3_title}} </h2>
-          <p>
-            {!!$service_svc3_content!!}
-          </p>
-        </div>
-
-        <div class="book-now">
-          <a href="#">
-            Book now
-          </a>
-        </div>
       </div>
-
-      <div class="paw"></div>
 
     </div>
   </div>

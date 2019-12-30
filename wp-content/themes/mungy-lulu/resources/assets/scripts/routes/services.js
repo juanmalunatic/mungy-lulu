@@ -30,6 +30,13 @@ function setUpChanger() {
     let $img_tgt = $('.picture__' + service_tgt_str);
     $img_tgt.addClass('active');
 
+    // Radio
+    $('#d-' + service_tgt_str)
+      .attr('checked', 'checked')
+      .change();
+
+    console.log('#d-' + service_tgt_str);
+
   });
 }
 
