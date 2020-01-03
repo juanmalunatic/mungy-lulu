@@ -47,7 +47,10 @@
             <p>
               {!!$service_svc1_content!!}
             </p>
-            @include('partials.page-services-block-extra')
+            @include(
+              'partials.page-services-block-extra',
+              ['link_obj' => $service_svc1_price]
+            )
           </div>
 
           <div class="service service__dog-spa">
@@ -55,7 +58,10 @@
             <p>
               {!!$service_svc2_content!!}
             </p>
-            @include('partials.page-services-block-extra')
+            @include(
+              'partials.page-services-block-extra',
+              ['link_obj' => $service_svc2_price]
+            )
           </div>
 
           <div class="service service__overnight">
@@ -63,7 +69,10 @@
             <p>
               {!!$service_svc3_content!!}
             </p>
-            @include('partials.page-services-block-extra')
+            @include(
+              'partials.page-services-block-extra',
+              ['link_obj' => $service_svc3_price]
+            )
           </div>
 
         </div>
