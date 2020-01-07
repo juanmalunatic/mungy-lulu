@@ -126,3 +126,23 @@
     }
   }
 }
+
+#footer-mungy-site {
+  --font-size-footer-mungy: calc(var(--font-size-base) * 0.8);
+
+  background-color: #574360;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: $font-weight-normal;
+  font-size: var(--font-size-footer-mungy);
+  letter-spacing: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  .copyright {
+    font-size: calc(var(--font-size-footer-mungy) * 0.8);
+    vertical-align: middle;
+    display: inline-block;
+  }
+}

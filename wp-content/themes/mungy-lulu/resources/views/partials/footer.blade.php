@@ -15,11 +15,11 @@
           Love us & leave us
         </span>
         <div class="footer__social">
-          <a href="https://www.facebook.com/loveusandleaveus/">
+          <a href="https://www.facebook.com/loveusandleaveus/" target="_blank">
             <span class="sr-only">Love Us & Leave Us - Facebook</span>
             <i class="fab fa-facebook"></i>
           </a>
-          <a href="https://www.instagram.com/loveusandleaveus/">
+          <a href="https://www.instagram.com/loveusandleaveus/" target="_blank">
             <span class="sr-only">Love Us & Leave Us - Instagram</span>
             <i class="fab fa-instagram"></i>
           </a>
@@ -42,3 +42,10 @@
     </div>
   </div>
 </footer>
+<div class="container-fluid" id="footer-mungy-site">
+  <div class="row">
+    <div class="col">
+      2019 <span class="copyright">&copy;</span> Mungy Site
+    </div>
+  </div>
+</div>
