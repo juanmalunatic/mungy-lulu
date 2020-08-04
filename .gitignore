@@ -138,3 +138,10 @@ wp-content/themes/twentyseventeen
 local-phpinfo.php
 db.php
 wp-content/mu-plugins
+
+# flywheel specific
+loveusandleaveus.com/
+php_errorlog
+robots.txt
+sucuri-*.php
+
