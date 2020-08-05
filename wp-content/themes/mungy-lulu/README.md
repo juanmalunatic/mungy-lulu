@@ -1,3 +1,35 @@
+# Mungy - LU&LU
+
+To make changes to this codebase:
+
+- Install the dev-env locally
+  Pull the latest backup from FlyWheel and import it to Local by FlyWheel
+  (alternately, make the wp install work in your local LAMP/XAMP server)
+
+  This will install the assets and the latest DB
+
+- If possible, sync with the latest repo
+  https://github.com/juanmalunatic/mungy-lulu
+
+  Hit me up at lunalopez@gmail.com if you want to take ownership,
+  otherwise feel free to submit a PR.
+
+
+- Navigate to wp-content/themes/mungy-lulu
+
+- Install dependencies using node 10.16.0
+  nvm use 10.16.0
+  npm install
+  npm install -g yarn
+  yarn
+
+  This will install everything needed to develop locally
+
+- Run the local server to have hot-reloading
+  yarn start
+
+
+
 # [Sage](https://roots.io/sage/)
 [![Packagist](https://img.shields.io/packagist/vpre/roots/sage.svg?style=flat-square)](https://packagist.org/packages/roots/sage)
 [![devDependency Status](https://img.shields.io/david/dev/roots/sage.svg?style=flat-square)](https://david-dm.org/roots/sage#info=devDependencies)

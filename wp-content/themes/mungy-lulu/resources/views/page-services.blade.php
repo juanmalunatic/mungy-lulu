@@ -82,6 +82,39 @@
     </div>
   </div>
 
+  <div class="services__reqs">
+
+    <div class="services__reqs__sepa"></div>
+
+    <div class="services__reqs__holder">
+
+      <div class="services__reqs__head">
+        <h2> Requirements </h2>
+        <h3> Questions? </h3>
+      </div>
+
+      <div class="services__reqs__body">
+        <h4> Check out our list of requirements </h4>
+        <p>
+          Dogs must be at least 4 months old.
+        </p>
+        <p>
+          All dogs must have current Rabies, Distemper, Bordetella and Canine Influenza vaccines.
+        </p>
+        <p>
+          All dogs must be spayed or neutered if over 8 months old.
+        </p>
+        <p>
+          Dogs must attend a trial day before they board or attend daycare.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="services__reqs__sepa"></div>
+
+  </div>
+
   <div class="services__testimonials">
     @include('partials.testimonials')
   </div>
