@@ -95,18 +95,7 @@
 
       <div class="services__reqs__body">
         <h4> Check out our list of requirements </h4>
-        <p>
-          Dogs must be at least 4 months old.
-        </p>
-        <p>
-          All dogs must have current Rabies, Distemper, Bordetella and Canine Influenza vaccines.
-        </p>
-        <p>
-          All dogs must be spayed or neutered if over 8 months old.
-        </p>
-        <p>
-          Dogs must attend a trial day before they board or attend daycare.
-        </p>
+        {!!$services_requirements!!}
       </div>
 
     </div>
